@@ -1,40 +1,42 @@
 using System;
-
-class Program
+namespace suckmynuts
 {
-    public static void Main()
+    class Caeser_Cipher
     {
-        int Pindex, length, remaining, shift_value;
-        string Message;
-        char[] Alphabet_lowercase = "abcdefghijklmnopqrstuvwxyz".ToCharArray();
-        Console.Write("Enter the message you wish to encrypt: ");
-        Message = Console.ReadLine();
-        Console.Write("Enter your desired shift value: ");
-        shift_value = int.Parse(Console.ReadLine());
-        Console.WriteLine("Using shift value of " + shift_value + "...");
-        char[] MessageArray = Message.ToCharArray();
-        length = MessageArray.Length;
-        for(int i = 0; i < length; i++)
+        public static void Main()
         {
-            Pindex = Array.IndexOf(Alphabet_lowercase, MessageArray[i]);
-            if(Pindex == 25)
+            int Pindex, length, shift_value;
+            int remaining = 0;
+            string Message;
+            char[] Alphabet_lowercase = "abcdefghijklmnopqrstuvwxyz".ToCharArray(); // Creats an array of the alphabet (26 chars, 25 spots)
+
+            Console.Write("Enter the message you wish to encrypt: ");
+            Message = Console.ReadLine(); // Input message
+
+            Console.Write("Enter your desired shift value: ");
+            shift_value = int.Parse(Console.ReadLine()); //Input shift value
+
+            Console.WriteLine("Using shift value of " + shift_value + "...");
+            char[] MessageArray = Message.ToCharArray(); // Converts message to an array of letters
+
+            length = MessageArray.Length; 
+
+            for(int i = 0; i < length; i++)
             {
-                Pindex = 0;
-            }
-            else if(Pindex + shift_value > 27)
-            {
-                remaining = 26 - Pindex; // remaining slots until it throws an error
-                Pindex = -1; 
+                Pindex = Array.IndexOf(Alphabet_lowercase, MessageArray[i]);
                 
+                if (Pindex + shift_value > 25)
+                {
+                    remaining = 26 - (Pindex + shift_value); // can give a negative num 
+                    Pindex = -2; 
+                }
+                if(MessageArray[i] == ' ')
+                    continue;
+                MessageArray[i] = Alphabet_lowercase[Pindex + shift_value - remaining];    
             }
-            else if(Pindex + shift_value == 27)
-            {
-                Pindex = 0;
-                shift_value = 0;
-            }                     
-            MessageArray[i] = Alphabet_lowercase[Pindex + shift_value];
-        }    
-        string EncryptedMessage = new string(MessageArray);
-        Console.WriteLine(EncryptedMessage);
+            string EncryptedMessage = new string(MessageArray);
+            Console.WriteLine(EncryptedMessage);
+
+        }
     }
 }

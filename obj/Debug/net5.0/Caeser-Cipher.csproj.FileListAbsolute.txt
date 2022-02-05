@@ -1,0 +1,16 @@
+C:\Users\golss\Documents\GitHub\Caeser-Cipher\obj\Debug\net5.0\Caeser-Cipher.csproj.AssemblyReference.cache
+C:\Users\golss\Documents\GitHub\Caeser-Cipher\obj\Debug\net5.0\Caeser-Cipher.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\golss\Documents\GitHub\Caeser-Cipher\obj\Debug\net5.0\Caeser-Cipher.AssemblyInfoInputs.cache
+C:\Users\golss\Documents\GitHub\Caeser-Cipher\obj\Debug\net5.0\Caeser-Cipher.AssemblyInfo.cs
+C:\Users\golss\Documents\GitHub\Caeser-Cipher\obj\Debug\net5.0\Caeser-Cipher.csproj.CoreCompileInputs.cache
+C:\Users\golss\Documents\GitHub\Caeser-Cipher\bin\Debug\net5.0\Caeser-Cipher.exe
+C:\Users\golss\Documents\GitHub\Caeser-Cipher\bin\Debug\net5.0\Caeser-Cipher.deps.json
+C:\Users\golss\Documents\GitHub\Caeser-Cipher\bin\Debug\net5.0\Caeser-Cipher.runtimeconfig.json
+C:\Users\golss\Documents\GitHub\Caeser-Cipher\bin\Debug\net5.0\Caeser-Cipher.runtimeconfig.dev.json
+C:\Users\golss\Documents\GitHub\Caeser-Cipher\bin\Debug\net5.0\Caeser-Cipher.dll
+C:\Users\golss\Documents\GitHub\Caeser-Cipher\bin\Debug\net5.0\ref\Caeser-Cipher.dll
+C:\Users\golss\Documents\GitHub\Caeser-Cipher\bin\Debug\net5.0\Caeser-Cipher.pdb
+C:\Users\golss\Documents\GitHub\Caeser-Cipher\obj\Debug\net5.0\Caeser-Cipher.dll
+C:\Users\golss\Documents\GitHub\Caeser-Cipher\obj\Debug\net5.0\ref\Caeser-Cipher.dll
+C:\Users\golss\Documents\GitHub\Caeser-Cipher\obj\Debug\net5.0\Caeser-Cipher.pdb
+C:\Users\golss\Documents\GitHub\Caeser-Cipher\obj\Debug\net5.0\Caeser-Cipher.genruntimeconfig.cache
