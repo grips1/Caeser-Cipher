@@ -4,7 +4,16 @@
 * Uppercase letter encryption
 * Lowercase letter encryption
 * Ignores spaces
+* Argument passing
 
 
-*Features to come:*
-* Argument passing instead of the current I/O method
+## Usage ##
+###### Windows
+``` 
+Caeser-Cipher.exe <MessageToEncrypt> <shift value>
+```
+###### Linux
+```
+Obviously you'll have to use wine:
+wine Caeser-Cipher.exe abc 5
+```
