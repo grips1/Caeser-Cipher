@@ -10,13 +10,13 @@ namespace suckmynuts
             int remaining = 0;
             string Message;
             char[] Alphabet_uppercase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".ToCharArray();
-            char[] Alphabet_lowercase = "abcdefghijklmnopqrstuvwxyz".ToCharArray(); // Creats an array of the alphabet (26 chars, 25 spots)
+            char[] Alphabet_lowercase = "abcdefghijklmnopqrstuvwxyz".ToCharArray(); // Creats an array of the alphabet
 
             Console.Write("Enter the message you wish to encrypt: ");
-            Message = Console.ReadLine(); // Input message
+            Message = Console.ReadLine(); 
 
             Console.Write("Enter your desired shift value: ");
-            shift_value = int.Parse(Console.ReadLine()); //Input shift value
+            shift_value = int.Parse(Console.ReadLine()); 
 
             Console.WriteLine("Using shift value of " + shift_value + "...");
             char[] MessageArray = Message.ToCharArray(); // Converts message to an array of letters
@@ -34,7 +34,7 @@ namespace suckmynuts
                     Pindex = Array.IndexOf(Alphabet_lowercase, MessageArray[i]);
                     if (Pindex + shift_value > 25)
                     {
-                        remaining = 26 - (Pindex + shift_value); // can give a negative num 
+                        remaining = 26 - (Pindex + shift_value); 
                         Pindex = -2;
                     }
                     MessageArray[i] = Alphabet_lowercase[Pindex + shift_value - remaining];
@@ -46,7 +46,7 @@ namespace suckmynuts
                     Pindex = Array.IndexOf(Alphabet_uppercase, MessageArray[i]);
                     if (Pindex + shift_value > 25)
                     {
-                        remaining = 26 - (Pindex + shift_value); // can give a negative num 
+                        remaining = 26 - (Pindex + shift_value); 
                         Pindex = -2;
                     }
                     MessageArray[i] = Alphabet_uppercase[Pindex + shift_value - remaining];
