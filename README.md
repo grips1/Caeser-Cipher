@@ -10,9 +10,9 @@
 ## Usage ##
 ###### Windows
 ``` 
-Caeser-Cipher.exe <MessageToEncrypt> <shift value>
+Caeser-Cipher.exe <MessageToEncrypt> <ShiftValue>
 ```
 ###### Linux
 ```
-wine Caeser-Cipher.exe abc 5
+wine Caeser-Cipher.exe <MessageToEncrypt> <ShiftValue>
 ```
