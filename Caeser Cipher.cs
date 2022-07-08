@@ -18,9 +18,7 @@ namespace Caeser_Cipher
 			length = MessageArray.Length;
 			for (int i = 0; i < length; i++)
 			{
-                
-				if (MessageArray[i] == ' ') continue;
-				
+				if (MessageArray[i] == ' ') continue;	
 				if (Alphabet_lowercase.Contains(MessageArray[i])) // Subroutine for lowercase letters
 				{
 					Pindex = Array.IndexOf(Alphabet_lowercase, MessageArray[i]);
