@@ -12,7 +12,3 @@
 ``` 
 Caeser-Cipher.exe <MessageToEncrypt> <ShiftValue>
 ```
-###### Linux
-```
-wine Caeser-Cipher.exe <MessageToEncrypt> <ShiftValue>
-```
